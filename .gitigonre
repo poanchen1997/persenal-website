@@ -1,0 +1,4 @@
+personal-website-content/node_modules/
+**/node_modules/
+personal-website-content/build
+**/build

@@ -5,7 +5,8 @@ import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+// import IMG6 from '../../assets/portfolio6.jpg'
+import IMG7 from '../../assets/portfolio7.jpg'
 
 const Porfolio = () => {
     return (
@@ -14,6 +15,15 @@ const Porfolio = () => {
             <h2>Portfolio</h2>
 
             <div className="container porfolio__container">
+                <article className='porfolio__item'>
+                    <div className="porfolio__item-image">
+                        <img src={IMG7} alt="" />
+                    </div>
+                    <h3>Minecraft Image Converter</h3>
+                    <div className="porfolio__item-cta">
+                        <a href="https://github.com/poanchen1997/mc_image_converter" className='btn' target='_blank' rel='noreferrer'>Github</a>
+                    </div>
+                </article>
                 <article className='porfolio__item'>
                     <div className="porfolio__item-image">
                         <img src={IMG1} alt="" />
@@ -63,7 +73,7 @@ const Porfolio = () => {
                         <a href="https://github.com/poanchen1997/rotating-things" className='btn' target='_blank' rel='noreferrer'>Github</a>
                     </div>
                 </article>
-                <article className='porfolio__item'>
+                {/* <article className='porfolio__item'>
                     <div className="porfolio__item-image">
                         <img src={IMG6} alt="" />
                     </div>
@@ -71,7 +81,7 @@ const Porfolio = () => {
                     <div className="porfolio__item-cta">
                         <a href="https://github.com/poanchen1997/Statistic-Computing" className='btn' target='_blank' rel='noreferrer'>Github</a>
                     </div>
-                </article>
+                </article> */}
             </div>
         </section>
     )
